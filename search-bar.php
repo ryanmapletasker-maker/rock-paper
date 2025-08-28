@@ -19,6 +19,16 @@ global $CORE;  ?>
     <div class="show-mobile mobile-filters-bar">
     <a  data-toggle="collapse" href="#filters-extra" id="filerbuttonclick" class="btn btn-block btn-system btn_filt small"><span> <i class="fal fa-sliders-h mr-2"></i> <?php echo __("Filters","premiumpress"); ?></span></a>
     </div>
+
+    <div class="bg-white rounded-lg shadow-sm p-2 mb-4">
+       <div class="input-group">
+          <input type="text" class="form-control customfilter" data-type="text" data-key="keyword"
+           placeholder="<?php echo __("Search for tasks...","premiumpress"); ?>">
+          <div class="input-group-append">
+             <button class="btn btn-primary" type="button" onclick="_filter_update()"><i class="fa fa-search"></i></button>
+          </div>
+       </div>
+    </div>
    
    
       <div class="filter_sortby t1">
